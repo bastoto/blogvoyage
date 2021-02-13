@@ -77,7 +77,7 @@ body {
 }
 
 .ColonneStyle {
-  background-image: url("vecchio.jpg");
+  background-image: url("../Images/vecchio.jpg");
   width: 33%;
   height: 350px;
   background-color: rgb(255, 222, 173);
@@ -106,14 +106,14 @@ body {
 }
 
 #Colonne3 {
-  background-image: url("italy.jpg");
+  background-image: url("../Images/italy.jpg");
   transition: background-image 0.5s;
 }
 
 #Colonne4 {
   background-size: 130% auto;
   transition: background-size 0.5, background-image 0.5s;
-  background-image: url("Russie.jpg");
+  background-image: url("../Images/Russie.jpg");
 }
 
 #Colonne4:hover {
@@ -122,7 +122,7 @@ body {
 
 #Colonne5 {
   transition: background-image 0.5s;
-  background-image: url("United Kingdom.jpg");
+  background-image: url("../Images/United Kingdom.jpg");
 }
 
 #MonMenuHaut {
