@@ -16,4 +16,10 @@ $(document.body).ready(function () {
     setTimeout('$("#ContenuMenu").addClass("d-none");', 500);
     $("#Menu").removeClass("MenuOuvert").addClass("MenuFerme");
   });
+    $(document).on("click", "#submitlogin", function (event) {
+    var login = $("#username").val();
+    var password = $("#password").val();
+        page("checkconnection","resultform",login, password); // je peux ajouter une autre variable, par exemple mail. PAS OUBLIER : d'ajouter variable avant (var) 
+  });
 });
+
