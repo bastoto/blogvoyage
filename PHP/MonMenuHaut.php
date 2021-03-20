@@ -4,10 +4,9 @@
     </div>
 
     <div id="MonMenuHaut">
-      <span> <a href="about.html" target="_blank">About </a></span>
-      <span>
-        <a href="destinations.html" target="_blank">Destinations </a></span
+      <span class="about mr-3">About</span>
+      <span class="destinations mr-3" >Destinations </span
       >
-      <span> <a href="photography.html" target="_blank">Photography </a></span>
-      <span> <a href="contact.html" target="_blank"> Contact </a></span>
+      <span class="photography mr-3">Photography </span>
+      <span class="contact mr-3"> Contact </span>
     </div>

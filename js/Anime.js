@@ -5,7 +5,20 @@ $(document.body).ready(function () {
 
     // $("#Colonne1").css("backgroundColor", "#1CEA50");
   });
-
+    $(document).on("click", ".contact", function (event) {
+    page("contact","Content");
+  });
+    $(document).on("click", ".about", function (event) {
+    page("about","Content");
+  });
+       $(document).on("click", ".destinations", function (event) {
+    page("destinations","Content");
+  });
+    
+    $(document).on("click", ".photography", function (event) {
+    page("photography","Content");
+  });
+    
   $(document).on("click", ".MenuFerme", function (event) {
     $("#ContenuMenu").removeClass("d-none");
     $("#ContenuMenu").css("width", "200px");

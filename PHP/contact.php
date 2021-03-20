@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <?php
-  include("PHP/header.php");    
-?>
-
-  </head>
-  <body>
- <?php
-  include("PHP/menu.php");    
-?>
-      
-  <body>
-   
-    <?php
-  include("PHP/MonMenuHaut.php");    
-?>
-    
-    <div id="Content" class="p-4">
-     
+ 
         <div class="form-group">
          <label for="exampleInputPrenom">First Name </label>
           <input type="text" class="form-control" id="username" aria-describedby="" placeholder="Insert here your first name">    </div>
@@ -48,11 +28,4 @@
         </div>
         <button type="submit" class="btn btn-primary" id= "submitlogin">Submit</button>
     
-    </div>
       <div id="resultform"> </div> 
-<?php
-  include("PHP/footer.php");    
-?>
-   
-  </body>
-</html>
