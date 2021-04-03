@@ -132,6 +132,9 @@ body {
   min-height: 15px;
   background-color: #0e6973;
 }
+#MonMenuHaut span {
+    cursor: pointer;
+}
 
 .Themes {
   text-decoration: underline;
@@ -170,24 +173,45 @@ a {
 }
 
 #MenuHamb {
-    width: 0px;
+    width: 400px;
+    margin-left: -200px;
+    transition: margin-left 0.5s;
+   
 }
 
 #ContenuMenu {
-  height: 100%;
-  width: 0px;
-  transition: width 0.5s;
+    position:fixed;
+  width: 200px;
+    height: 100%;
+}
+#ContenuMenu li {
+    cursor:pointer;
+}
+#Menu {
+
+    cursor: pointer;
+    margin-left: 200px;
+    border-radius: 0 0 50px 0;
 }
 
-.imgitem img {
-    height: 5O%;
+.imgitem {
+    height:400px;
+    background-size:100% auto;
+    transition: background-size 0.5s;
 }
-
+.imgitem:hover {
+    background-size:110% auto;
+}
 .descriptionimg {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     color: white;
     width: 100%;
     position: absolute;
     bottom: 0;
-    
+    left:0;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+.imgitem:hover .descriptionimg{
+    opacity: 1;
 }

@@ -1,3 +1,7 @@
+var mesimages = [
+    {url:"photo1.jpg", description: 'Super description'},{url:"photo2.jpg", description: 'Super description'},{url:"photo3.jpg", description: 'Super description'},{url:"photo4.jpg", description: 'Super description'}];
+
+
 function getXMLHttpRequest() {
     var xhr = null;
 
@@ -26,6 +30,9 @@ function page(nom, contenu, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9
 
             if(nom == "") {
                    $('#'+contenu).html(xhr.responseText);
+            }else if(nom == "photography") {
+                 $('#'+contenu).html(xhr.responseText);
+                   mesimages.forEach(loadGalerie);
             }else {
                 $('#'+contenu).html(xhr.responseText);
             }
@@ -39,3 +46,10 @@ function page(nom, contenu, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9
 
 }
 
+
+function loadGalerie(item, index, arr) {
+    var imgElem = $('<div class="imgitem m-2 col-5 text-center"><div class="descriptionimg p-4 col-12">'+item.description+'</div></div>');
+    imgElem.css('backgroundImage', 'url(Images/'+item.url+')');
+    $('#Content').find('.row').append(imgElem);
+ 
+}

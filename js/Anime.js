@@ -20,13 +20,14 @@ $(document.body).ready(function () {
   });
     
   $(document).on("click", ".MenuFerme", function (event) {
-    $("#ContenuMenu").removeClass("d-none");
-    $("#ContenuMenu").css("width", "200px");
+  
+    //$("#MenuHamb").css("height", "100%");
+    $("#MenuHamb").css("margin-left", "0px");
     $("#Menu").removeClass("MenuFerme").addClass("MenuOuvert");
   });
   $(document).on("click", ".MenuOuvert", function (event) {
-    $("#ContenuMenu").css("width", "0px");
-    setTimeout('$("#ContenuMenu").addClass("d-none");', 500);
+     $("#MenuHamb").css("margin-left", "-200px");
+     $("#MenuHamb").css("height", "auto");  
     $("#Menu").removeClass("MenuOuvert").addClass("MenuFerme");
   });
     $(document).on("click", "#submitlogin", function (event) {
