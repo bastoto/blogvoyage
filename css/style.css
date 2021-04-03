@@ -178,3 +178,16 @@ a {
   width: 0px;
   transition: width 0.5s;
 }
+
+.imgitem img {
+    height: 5O%;
+}
+
+.descriptionimg {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}

@@ -29,6 +29,8 @@ function page(nom, contenu, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9
             }else {
                 $('#'+contenu).html(xhr.responseText);
             }
+        }else {
+            $('#'+contenu).html('<div class="text-center"><img src="Images/50655.gif"></div>');
         }
     };
     xhr.open("POST", "PHP/" + nom + ".php", true);
