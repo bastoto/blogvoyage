@@ -10,9 +10,9 @@
         </ul>
 
       </div> 
-       <div id="Menu" class="inblock p-4 MenuFerme bg-dark text-light"> 
+       <div id="Menu" class="inblock  p-3 MenuFerme bg-dark text-light"> 
          <i class="fas fa-bars"></i> 
-         <span> Menu </span> 
+         <span class="d-none d-sm-inline"> Menu </span> 
         </div>
 
        </div> 
