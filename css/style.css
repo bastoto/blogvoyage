@@ -62,7 +62,7 @@ body {
 #TOPDESTINATIONS {
     color: #0e6973;
     font-size: 25px;
-  
+
     font-weight: bold;
 }
 
@@ -153,12 +153,12 @@ footer span {
     margin-right: 30px;
 }
 @keyframes grow {
-  0%   {transform: scale(1);}
-  100% {transform: scale(1.5);}
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.5);}
 }
 @keyframes down {
-  0%   {transform: scale(1.5);}
-  100% {transform: scale(1);}
+    0%   {transform: scale(1.5);}
+    100% {transform: scale(1);}
 }
 a {
     color: white;
@@ -168,7 +168,7 @@ a {
     word-spacing: 10px;
     font-size: 15px;
     font-weight: normal;
-   transition: text-shadow 0.5s, font-weight 0.5s;
+    transition: text-shadow 0.5s, font-weight 0.5s;
 
 }
 a:hover {
@@ -229,4 +229,35 @@ a:hover {
 }
 .imgitem:hover .descriptionimg{
     opacity: 1;
+}
+
+.titlearticle {
+    color: blueviolet;
+}
+
+.articles {
+    color: black;
+}
+
+.wordbreak{
+    word-break: break-word;
+}
+
+.articles{
+    background-color: rgba(224, 224, 224, 0.3);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.015);
+}
+
+.imagearticles{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.breakword{
+    word-wrap: break-word;
 }

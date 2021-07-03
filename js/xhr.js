@@ -24,15 +24,23 @@ function getXMLHttpRequest() {
 
 function page(nom, contenu, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19, arg20, arg21, arg22, arg23, arg24 , arg25, arg26, arg27 , arg28, arg29, arg30, arg31 , arg32 , arg33) {
     var xhr = getXMLHttpRequest();
-    
+
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
 
             if(nom == "") {
-                   $('#'+contenu).html(xhr.responseText);
+                $('#'+contenu).html(xhr.responseText);
             }else if(nom == "photography") {
-                 $('#'+contenu).html(xhr.responseText);
-                   mesimages.forEach(loadGalerie);
+                $('#'+contenu).html(xhr.responseText);
+                mesimages.forEach(loadGalerie);
+            }else if(nom == "checkconnection") {
+                if(xhr.responseText == "connected") {
+                    page("admincontent","Content");
+                    localStorage.setItem("admin","true")
+                }else {
+                    $('#'+contenu).html(xhr.responseText);
+                }
+
             }else {
                 $('#'+contenu).html(xhr.responseText);
             }
@@ -51,5 +59,5 @@ function loadGalerie(item, index, arr) {
     var imgElem = $('<div class="imgitem m-2 col-5 text-center"><div class="descriptionimg p-4 col-12">'+item.description+'</div></div>');
     imgElem.css('backgroundImage', 'url(Images/'+item.url+')');
     $('#Content').find('.row').append(imgElem);
- 
+
 }
